@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youssef Soula — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Three.js canvas (fixed background) -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo">YS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Youssef <span>Soula</span></h1>
+      <p class="hero-title">
+        <span id="typewriter"></span><span class="type-cursor">|</span>
+      </p>
+      <p class="hero-sub">
+        Building intelligent systems at the intersection of deep learning,
+        embedded hardware, and real-world impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="section-inner">
+      <span class="section-tag">Who I Am</span>
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Telecommunications Engineering student at Sup'Com</strong>,
+            selected for a double degree with <strong>Télécom SudParis</strong>.
+            I'm passionate about building AI-powered systems that create tangible impact —
+            from energy monitoring platforms and IoT devices to RAG-based assistants and
+            computer-vision drones.
+          </p>
+          <br />
+          <p>
+            Outside the lab I lead as <strong>President of IEEE Sup'Com</strong> and
+            have competed in over a dozen national and international hackathons, placing
+            on the podium in every one I entered.
+          </p>
+        </div>
+
+        <div class="terminal-window reveal">
+          <div class="terminal-bar">
+            <span class="terminal-dot td-red"></span>
+            <span class="terminal-dot td-yellow"></span>
+            <span class="terminal-dot td-green"></span>
+            <span class="terminal-title">youssef@portfolio — stats.sh</span>
+          </div>
+          <div class="terminal-body" id="terminal-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education">
+    <div class="section-inner">
+      <span class="section-tag">Academic Background</span>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2024 – Present</div>
+          <div class="timeline-school">Higher School of Communications of Tunis — Sup'Com</div>
+          <div class="timeline-degree">Engineering Cycle — Telecommunications</div>
+          <div class="timeline-location">Ariana, Tunisia</div>
+          <div class="timeline-note">
+            Selected for an Engineering Double Degree with Télécom SudParis (France)
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2022 – Jun 2024</div>
+          <div class="timeline-school">Preparatory Institute for Engineering Studies of Tunis</div>
+          <div class="timeline-degree">Mathematics &amp; Physics</div>
+          <div class="timeline-location">Tunis, Tunisia</div>
+          <div class="timeline-note">
+            Ranked <strong>50th / 1,410</strong> in the national entrance examination
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <!-- ===================== JOURNEY ===================== -->
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience">
+    <div class="section-inner">
+      <span class="section-tag">Work Experience</span>
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="journey-wrap">
+        <div class="journey-track"></div>
+
+        <!-- Next Consult -->
+        <div class="journey-item">
+          <div class="journey-node node-default">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L12.4 7.6H18L13.4 11.2L15.2 17L10 13.4L4.8 17L6.6 11.2L2 7.6H7.6L10 2Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="journey-card">
+            <div class="journey-header">
+              <div>
+                <div class="journey-title">Next Consult</div>
+                <div class="journey-role">First Year Internship</div>
+              </div>
+              <div class="journey-date-wrap">
+                <div class="journey-date">Jun &ndash; Jul 2025</div>
+                <div class="journey-loc">Tunis, Tunisia</div>
+              </div>
+            </div>
+            <ul class="journey-bullets">
+              <li>Automated data extraction from pharmacy websites using web scraping techniques.</li>
+              <li>Built an end-to-end ETL pipeline to collect, transform, and store pharmacy and medicine data at scale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="exp-first-line">
+          <span class="exp-cursor">&#x25B6;</span>
+          <span class="exp-text">Chapter one complete &mdash; the stack is just warming up.&nbsp; Here&rsquo;s to many more.</span>
+          <span class="exp-spark">&#x26A1;</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements">
+    <div class="section-inner">
+      <span class="section-tag">Competition Podiums</span>
+      <h2 class="section-title reveal">Achievements</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="trophy-grid">
+
+        <!-- Orange AI Hackathon -->
+        <div class="trophy-card rank-silver">
+          <div class="trophy-top-bar"></div>
+          <div class="trophy-shimmer"></div>
+          <div class="trophy-corner-glow"></div>
+          <div class="trophy-rank-wrap">
+            <span class="trophy-rank-num">2</span><span class="trophy-rank-suffix">nd</span>
+          </div>
+          <div class="trophy-medal">&#x1F948;</div>
+          <div class="trophy-name">Orange AI Hackathon</div>
+          <div class="trophy-category">AI &nbsp;&bull;&nbsp; Digital Twin</div>
+          <p class="trophy-desc">
+            Platform to evaluate radio network cells via KPIs (throughput, avg users&hellip;)
+            and preview corrective actions through Digital Twin simulation.
+          </p>
+          <div class="trophy-tag-row">
+            <span class="trophy-tag">Hackathon</span>
+            <span class="trophy-tag">AI</span>
+            <span class="trophy-tag">Silver</span>
+          </div>
+        </div>
+
+        <!-- SOS Hackathon -->
+        <div class="trophy-card rank-silver">
+          <div class="trophy-top-bar"></div>
+          <div class="trophy-shimmer"></div>
+          <div class="trophy-corner-glow"></div>
+          <div class="trophy-rank-wrap">
+            <span class="trophy-rank-num">2</span><span class="trophy-rank-suffix">nd</span>
+          </div>
+          <div class="trophy-medal">&#x1F948;</div>
+          <div class="trophy-name">SOS Hackathon</div>
+          <div class="trophy-category">SaaS &nbsp;&bull;&nbsp; Social Impact</div>
+          <p class="trophy-desc">
+            SaaS for the SOS Children&rsquo;s Villages Tunisia ecosystem with role-based interfaces,
+            automated reporting &amp; signature workflows, and ticket-tracking across hierarchy levels.
+          </p>
+          <div class="trophy-tag-row">
+            <span class="trophy-tag">Hackathon</span>
+            <span class="trophy-tag">SaaS</span>
+            <span class="trophy-tag">Silver</span>
+          </div>
+        </div>
+
+        <!-- Sup'Com Challenge d'Entreprendre -->
+        <div class="trophy-card rank-bronze">
+          <div class="trophy-top-bar"></div>
+          <div class="trophy-shimmer"></div>
+          <div class="trophy-corner-glow"></div>
+          <div class="trophy-rank-wrap">
+            <span class="trophy-rank-num">3</span><span class="trophy-rank-suffix">rd</span>
+          </div>
+          <div class="trophy-medal">&#x1F949;</div>
+          <div class="trophy-name">Sup&rsquo;Com Challenge d&rsquo;Entreprendre</div>
+          <div class="trophy-category">Entrepreneurship &nbsp;&bull;&nbsp; CyberSec</div>
+          <p class="trophy-desc">
+            Cobalt &mdash; a cybersecurity consultancy for Tunisian SMEs offering pentesting packages,
+            real-time monitoring, intrusion detection, and employee security training.
+          </p>
+          <div class="trophy-tag-row">
+            <span class="trophy-tag">Entrepreneurship</span>
+            <span class="trophy-tag">CyberSec</span>
+            <span class="trophy-tag">Bronze</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="section-inner">
+      <span class="section-tag">What I've Built</span>
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="section-divider reveal"></div>
+
+      <!-- Filter bar -->
+      <div class="projects-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="vision">Vision</button>
+        <button class="filter-btn" data-filter="rag">RAG</button>
+      </div>
+
+      <div class="projects-wrap">
+
+        <div class="orbit-stage" id="orbit-stage">
+          <!-- Decorative ring tracks -->
+          <div class="orbit-track orbit-track-outer"></div>
+          <div class="orbit-track orbit-track-inner"></div>
+
+          <!-- Center hub -->
+          <div class="orbit-hub">
+            <div class="orbit-hub-pulse"></div>
+            <div class="orbit-hub-pulse orbit-hub-pulse--2"></div>
+            <span class="orbit-hub-glyph">&#x2731;</span>
+          </div>
+
+          <!-- PowerPulse -->
+          <div class="project-card" data-filters="ml">
+            <div class="project-meta">
+              <span class="project-metric metric-cyan">4th / 43</span>
+              <span class="project-event">TSYP 13</span>
+            </div>
+            <div class="project-title">PowerPulse</div>
+            <p class="project-desc">
+              Unified platform for energy consumption and PV production monitoring, combining
+              NILM-based disaggregation with LSTM, TCN, and ATCN forecasting models.
+              Anomaly detection on solar panels using XGBoost, LightGBM, and Random Forest ensembles.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">LSTM</span>
+              <span class="project-tag">TCN</span>
+              <span class="project-tag">XGBoost</span>
+              <span class="project-tag">PyTorch</span>
+            </div>
+          </div>
+
+          <!-- FreeGo -->
+          <div class="project-card" data-filters="iot vision">
+            <div class="project-meta">
+              <span class="project-metric metric-gold">2nd / 43</span>
+              <span class="project-event">TSYP 13</span>
+            </div>
+            <div class="project-title">FreeGo</div>
+            <p class="project-desc">
+              Smart post-harvest storage IoT unit with dual-fan ventilation, temperature/humidity
+              sensors, and a Raspberry Pi 4 streaming live data to a mobile app.
+              On-device Computer Vision identifies vegetable type and freshness, auto-adjusting
+              fan conditions to optimal values.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Raspberry Pi</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">YOLO</span>
+            </div>
+          </div>
+
+          <!-- GoldenRetriever -->
+          <div class="project-card" data-filters="ml rag">
+            <div class="project-meta">
+              <span class="project-metric metric-cyan">7th / 140</span>
+              <span class="project-event">Vectors in Orbit</span>
+            </div>
+            <div class="project-title">GoldenRetriever</div>
+            <p class="project-desc">
+              Real-time train network conflict resolver using the TransitLine API.
+              A binary classification model flags conflict states, then retrieves the most
+              similar historical resolution from a Qdrant vector database via semantic search.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">RAG</span>
+              <span class="project-tag">Qdrant</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ML Classification</span>
+            </div>
+          </div>
+
+          <!-- Falleha -->
+          <div class="project-card" data-filters="iot vision rag">
+            <div class="project-meta">
+              <span class="project-metric metric-purple">⭐ Featured</span>
+              <span class="project-event">WIEACT 4.0</span>
+            </div>
+            <div class="project-title">Falleha</div>
+            <p class="project-desc">
+              Intelligent agricultural assistant: a drone with Raspberry Pi &amp; PiCamera
+              monitoring crop quality via YOLOv5 and a Vision-Language Model, paired with a
+              Dynamic RAG chatbot designed to empower women farmers.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">YOLOv5</span>
+              <span class="project-tag">VLM</span>
+              <span class="project-tag">Dynamic RAG</span>
+              <span class="project-tag">Drone</span>
+            </div>
+          </div>
+
+          <!-- Tunisian Stock Predictor -->
+          <div class="project-card" data-filters="ml">
+            <div class="project-meta">
+              <span class="project-metric metric-dim">Personal</span>
+              <span class="project-event">Aug 2025</span>
+            </div>
+            <div class="project-title">Tunisian Stock Predictor</div>
+            <p class="project-desc">
+              Interactive dashboard for Tunisian equities featuring an LSTM deep learning
+              model for trend forecasting, with real-time data visualization and
+              performance analytics.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">LSTM</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">TensorFlow</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Detail panel: populated by JS on card click -->
+        <div class="orbit-panel" id="orbit-panel" aria-hidden="true">
+          <button class="orbit-panel-close" id="orbit-panel-close" aria-label="Close">&times;</button>
+          <div id="orbit-panel-body"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-tag">Toolkit</span>
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="skills-layout">
+
+        <div class="radar-wrap reveal">
+          <svg id="skill-radar" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+
+        <div class="skills-tags reveal-stagger">
+
+          <div class="skill-category">
+            <div class="skill-cat-title">Programming</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-title">ML / Deep Learning</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">LSTM</span>
+              <span class="skill-tag">YOLO</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">Transformers</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-title">Tools &amp; Platforms</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">ESP32</span>
+              <span class="skill-tag">Qdrant</span>
+              <span class="skill-tag">Power BI</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-title">Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Arabic — Native</span>
+              <span class="skill-tag">English — C1 (TOEIC 980)</span>
+              <span class="skill-tag">French — B2</span>
+              <span class="skill-tag">German</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ASSOCIATIONS ===================== -->
+  <section id="associations">
+    <div class="section-inner">
+      <span class="section-tag">Leadership</span>
+      <h2 class="section-title reveal">Associations</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="assoc-grid reveal-stagger">
+
+        <div class="assoc-card">
+          <div class="assoc-org">IEEE Sup'Com Student Branch</div>
+          <div class="assoc-role">President</div>
+          <div class="assoc-period">Jun 2025 – Present</div>
+        </div>
+
+        <div class="assoc-card">
+          <div class="assoc-org">Enactus IPEIT</div>
+          <div class="assoc-role">President</div>
+          <div class="assoc-period">Feb 2023 – Feb 2024</div>
+        </div>
+
+        <div class="assoc-card">
+          <div class="assoc-org">Space Club LPBT</div>
+          <div class="assoc-role">Member</div>
+          <div class="assoc-period">2020 – 2021</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications">
+    <div class="section-inner">
+      <span class="section-tag">Credentials</span>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="certs-grid reveal-stagger">
+        <div class="cert-card"><span class="cert-icon">🔵</span><span class="cert-name">Microsoft: Power BI Data Analyst Associate</span></div>
+        <div class="cert-card"><span class="cert-icon">🟢</span><span class="cert-name">Nvidia: Fundamentals of Deep Learning</span></div>
+        <div class="cert-card"><span class="cert-icon">🟢</span><span class="cert-name">Nvidia: Enhanced Data Science Outcomes with Efficient Workflows</span></div>
+        <div class="cert-card"><span class="cert-icon">🟢</span><span class="cert-name">Nvidia: Getting Started with AI on Jetson Nano</span></div>
+        <div class="cert-card"><span class="cert-icon">🟢</span><span class="cert-name">Nvidia: Introduction to Transformer-Based NLP</span></div>
+        <div class="cert-card"><span class="cert-icon">🟠</span><span class="cert-name">Machine Learning Techniques in MATLAB</span></div>
+        <div class="cert-card"><span class="cert-icon">🟠</span><span class="cert-name">Deep Learning Techniques in MATLAB for Image Applications</span></div>
+        <div class="cert-card"><span class="cert-icon">⭐</span><span class="cert-name">PEEC: National Student Entrepreneur Status</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-tag">Send a Signal</span>
+      <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="contact-grid">
+
+        <!-- ── Signal Form ── -->
+        <div class="signal-form-wrap reveal">
+          <form class="signal-form" id="signal-form" novalidate>
+
+            <div class="signal-field">
+              <label class="signal-label" for="sig-name">CALLSIGN</label>
+              <div class="signal-input-wrap">
+                <input id="sig-name" type="text" class="signal-input" placeholder="Your name" autocomplete="off" required />
+                <div class="signal-bar"></div>
+              </div>
+            </div>
+
+            <div class="signal-field">
+              <label class="signal-label" for="sig-email">FREQUENCY</label>
+              <div class="signal-input-wrap">
+                <input id="sig-email" type="email" class="signal-input" placeholder="your@email.com" autocomplete="off" required />
+                <div class="signal-bar"></div>
+              </div>
+            </div>
+
+            <div class="signal-field">
+              <label class="signal-label" for="sig-msg">TRANSMISSION</label>
+              <div class="signal-input-wrap">
+                <textarea id="sig-msg" class="signal-input signal-textarea" placeholder="Your message..." rows="4" required></textarea>
+                <div class="signal-bar"></div>
+              </div>
+            </div>
+
+            <div class="signal-send-row">
+              <button type="submit" class="signal-btn" id="signal-btn">
+                <span class="signal-btn-text">Transmit</span>
+                <span class="signal-arrow">&rArr;</span>
+                <span class="pulse-ring pulse-ring-1"></span>
+                <span class="pulse-ring pulse-ring-2"></span>
+              </button>
+              <p class="signal-status" id="signal-status"></p>
+            </div>
+
+          </form>
+
+          <div class="contact-links">
+            <a href="mailto:youssef.soula@supcom.tn" class="contact-link">
+              <i class="fa-solid fa-envelope"></i>
+              youssef.soula@supcom.tn
+            </a>
+            <a href="https://github.com/Leb0wsKy" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fa-brands fa-github"></i>
+              github.com/Leb0wsKy
+            </a>
+            <a href="https://linkedin.com/in/youssef-soula" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fa-brands fa-linkedin"></i>
+              linkedin.com/in/youssef-soula
+            </a>
+            <a href="tel:+21628062241" class="contact-link">
+              <i class="fa-solid fa-phone"></i>
+              +216 28 062 241
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Map ── -->
+        <div class="map-wrap reveal">
+          <div class="map-frame">
+            <svg id="world-map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-label="World map — Tunis, Tunisia">
+
+              <defs>
+                <!-- 15° dot grid -->
+                <pattern id="dot-grid" x="0" y="0" width="41.67" height="41.67" patternUnits="userSpaceOnUse">
+                  <circle cx="0" cy="0" r="0.8" fill="rgba(6,182,212,0.22)"/>
+                </pattern>
+                <!-- Ambient glow centred on Tunis -->
+                <radialGradient id="tn-ambient" cx="52.8%" cy="29.6%" r="18%">
+                  <stop offset="0%"   stop-color="rgba(6,182,212,0.22)"/>
+                  <stop offset="100%" stop-color="rgba(6,182,212,0)"/>
+                </radialGradient>
+                <!-- Edge vignette -->
+                <radialGradient id="map-vignette" cx="50%" cy="50%" r="50%">
+                  <stop offset="52%"  stop-color="rgba(4,4,18,0)"/>
+                  <stop offset="100%" stop-color="rgba(4,4,18,0.88)"/>
+                </radialGradient>
+                <!-- Soft glow filter for scan line -->
+                <filter id="scan-glow" x="-1%" y="-500%" width="102%" height="1100%">
+                  <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- Dot grid -->
+              <rect width="1000" height="500" fill="url(#dot-grid)"/>
+
+              <!-- Tunisia location ambient glow -->
+              <ellipse cx="528" cy="148" rx="145" ry="100" fill="url(#tn-ambient)"/>
+
+              <!-- Land masses -->
+              <g class="landmass">
+
+                <!-- Greenland -->
+                <path d="M 308,56 L 347,34 L 392,30 L 419,42 L 413,67 L 386,78 L 350,78 L 322,67 Z"/>
+
+                <!-- Iceland -->
+                <path d="M 419,78 L 436,72 L 453,75 L 456,86 L 439,92 L 422,89 Z"/>
+
+                <!-- North America -->
+                <path d="M 45,108 L 75,84 L 114,58 L 158,58 L 158,117 L 158,158 L 192,186 L 208,197 L 233,181 L 253,169 L 275,181 L 289,153 L 303,136 L 336,125 L 350,114 L 353,83 L 322,72 L 319,56 L 267,47 L 197,39 L 114,58 L 75,84 Z"/>
+
+                <!-- Central America -->
+                <path d="M 233,181 L 253,194 L 261,208 L 250,219 L 236,222 L 228,214 L 228,200 Z"/>
+
+                <!-- South America -->
+                <path d="M 236,222 L 261,214 L 281,222 L 300,239 L 311,269 L 311,306 L 300,347 L 281,392 L 261,431 L 242,444 L 222,436 L 206,414 L 194,383 L 189,344 L 192,308 L 200,269 L 214,247 Z"/>
+
+                <!-- Europe (main body) -->
+                <path d="M 475,147 L 486,150 L 500,144 L 508,131 L 525,128 L 544,144 L 550,139 L 561,144 L 575,139 L 583,122 L 603,119 L 608,97 L 583,72 L 558,61 L 542,58 L 514,78 L 522,92 L 503,111 L 489,117 L 494,128 Z"/>
+
+                <!-- UK -->
+                <path d="M 483,111 L 503,108 L 506,103 L 500,92 L 486,89 L 483,97 L 486,106 Z"/>
+
+                <!-- Ireland -->
+                <path d="M 472,106 L 478,100 L 483,106 L 478,111 Z"/>
+
+                <!-- Africa (geographically corrected) -->
+                <!-- N coast: Morocco → Algeria → Tunisia → Libya (Gulf of Sidra jog) → Egypt -->
+                <!-- E coast: Red Sea → Horn → E Africa → Cape -->
+                <!-- W coast: Cape → Namibia → Angola → Guinea Gulf → Senegal → Morocco -->
+                <path d="M 486,150 L 506,147 L 528,147 L 531,156 L 539,161 L 550,167 L 561,161 L 569,158 L 583,164 L 592,183 L 611,219 L 636,219 L 614,253 L 611,281 L 597,306 L 558,347 L 550,344 L 547,331 L 533,300 L 533,267 L 519,253 L 508,236 L 492,236 L 472,228 L 458,211 L 464,172 L 478,153 Z"/>
+
+                <!-- Madagascar -->
+                <path d="M 636,297 L 644,281 L 653,286 L 658,308 L 653,328 L 641,331 L 633,317 Z"/>
+
+                <!-- Arabian Peninsula -->
+                <path d="M 592,150 L 608,147 L 625,156 L 633,172 L 628,194 L 614,200 L 603,194 L 592,175 Z"/>
+
+                <!-- Asia (main body) -->
+                <path d="M 578,133 L 600,119 L 619,111 L 650,106 L 700,97 L 750,92 L 803,89 L 853,94 L 897,106 L 936,119 L 950,139 L 944,161 L 928,181 L 900,197 L 861,211 L 822,222 L 789,236 L 756,256 L 731,272 L 706,281 L 681,267 L 653,247 L 628,236 L 611,219 L 636,219 L 628,194 L 633,172 L 625,156 L 608,147 L 592,150 L 581,136 Z"/>
+
+                <!-- India -->
+                <path d="M 703,189 L 722,183 L 736,197 L 744,219 L 739,242 L 722,258 L 708,253 L 697,239 L 694,219 L 700,203 Z"/>
+
+                <!-- SE Asia peninsula -->
+                <path d="M 756,256 L 767,272 L 764,289 L 750,297 L 736,289 L 733,272 L 744,261 Z"/>
+
+                <!-- Japan -->
+                <path d="M 872,114 L 886,108 L 900,117 L 897,133 L 881,136 L 872,125 Z"/>
+
+                <!-- Australia -->
+                <path d="M 742,308 L 797,292 L 850,297 L 889,319 L 908,350 L 906,381 L 889,408 L 856,425 L 819,431 L 778,425 L 742,406 L 719,378 L 717,350 L 728,319 Z"/>
+
+              </g>
+
+              <!-- Tunisia marker — Tunis: 10.18°E, 36.82°N → x=528, y=148 -->
+              <circle class="tn-dot"    cx="528" cy="148" r="4"/>
+              <circle class="tn-ring"   cx="528" cy="148" r="4"/>
+              <circle class="tn-ring tn-ring-2" cx="528" cy="148" r="4"/>
+              <line   class="tn-tick"   x1="528" y1="140" x2="528" y2="144"/>
+              <text   class="tn-label"  x="528"  y="135"  text-anchor="middle">TUNIS</text>
+
+              <!-- Vignette overlay -->
+              <rect width="1000" height="500" fill="url(#map-vignette)" style="pointer-events:none"/>
+
+              <!-- Animated scan line (driven by GSAP in main.js) -->
+              <line id="map-scan-line" x1="0" y1="-2" x2="1000" y2="-2" class="map-scan" filter="url(#scan-glow)"/>
+
+            </svg>
+            <div class="map-coords">
+              <span class="map-coords-dot"></span>
+              10.2&deg;E &nbsp;&middot;&nbsp; 36.8&deg;N &nbsp;&mdash;&nbsp; Tunis, Tunisia
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>© 2026 Youssef Soula — Built with Three.js &amp; GSAP</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/three@0.156.1/build/three.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.4/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.4/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
